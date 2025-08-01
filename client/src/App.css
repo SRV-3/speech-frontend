@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0.2;
+  }
+}
+
+.floating-symbol {
+  position: absolute;
+  color: white;
+  opacity: 0.8;
+  animation-name: float;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
